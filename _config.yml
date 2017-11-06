@@ -1,0 +1,33 @@
+# Dependencies
+kramdown:
+  input: GFM
+  highlighter: rouge
+
+# Setup
+title:            ID PRAVUS
+tagline:          'ignis dei pravus est'
+description:      '여러가지를 기록하는 블로그입니다'
+url:              https://pravusid.github.io
+baseurl:          # the optional subpath of your site, e.g. "/blog"
+
+author:
+  name:           'pravusid'
+  url:            https://www.github.com/pravusid
+
+paginate:         5
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-paginate
+
+# Custom vars
+version:            3.4.1
+sidebar_home_link:  true
+github:
+  repo:             https://github.com/pravusid
+
+disqus:
+  shortname: pravusid
+google_analytics: UA-105311426-1

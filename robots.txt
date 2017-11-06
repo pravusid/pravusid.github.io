@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /about.html
+
+Sitemap: http://pravusid.github.io/sitemap.xml

@@ -37,3 +37,13 @@ comments: true
 <https://googlefonts.github.io/korean/> 에서 지원하는 폰트명을 호출하면, 다른 폰트도 사용할 수 있다.
 
 폰트 적용은 CSS를 불러온 뒤 CSS에서 Font Family 속성을 지정하면 된다.
+
+## 저작권
+
+구글 폰트에서 제공하는 폰트는 대부분 공개폰트이다 (Open Font License, Apache 2.0)
+
+상업적사용까지 큰 제약이 없는 경우가 대부분이다.
+
+공개 한글 글꼴들의 개별 저작권은 한국어 위키피디아에서 찾아볼 수 있다
+
+<https://ko.wikipedia.org/wiki/%ED%8B%80:%EA%B3%B5%EA%B0%9C_%ED%95%9C%EA%B8%80_%EA%B8%80%EA%BC%B4>

@@ -3,4 +3,4 @@ layout: category
 title: Algorithm
 ---
 
-자료구조, 알고리즘
+BOJ, Codewars ... 온라인 알고리즘 학습 기록

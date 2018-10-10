@@ -35,7 +35,7 @@ comments: true
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700');
 
 /* 배민 Do Hyeon */
-@import url('https://fonts.googleapis.com/css?family=Do+Hyeon:400,700');
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon:400');
 ```
 
 <https://googlefonts.github.io/korean/> 에서 지원하는 폰트이름을 호출하면, 다른 폰트도 사용할 수 있다.

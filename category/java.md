@@ -3,4 +3,4 @@ layout: category
 title: Java
 ---
 
-Java, Kotlin 관련 내용 및 Framework 사용기록
+Java, Kotlin, Scala ... JVM 관련 언어 및 Framework 사용기록

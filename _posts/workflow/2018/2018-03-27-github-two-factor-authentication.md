@@ -2,7 +2,7 @@
 layout: post
 title: Github Two-factor authentication 사용으로 인한 Authentication failed
 categories:
-  - Git
+  - Workflow
 tags:
   - Github
   - Two-factor authentication

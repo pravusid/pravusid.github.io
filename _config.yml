@@ -5,8 +5,8 @@ kramdown:
 
 # Setup
 title:            ID PRAVUS
-tagline:          'ignis dei pravus est'
-description:      '여러가지를 기록하는 블로그입니다'
+tagline:          'IGNIS DEI PRAVUS EST'
+description:      '甲의 계획, 乙의 인생'
 url:              https://pravusid.github.io
 baseurl:          # the optional subpath of your site, e.g. "/blog"
 

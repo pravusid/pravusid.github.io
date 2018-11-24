@@ -14,7 +14,7 @@ author:
   name:           'pravusid'
   url:            https://www.github.com/pravusid
 
-paginate:         5
+paginate:         10
 
 plugins:
   - jekyll-feed

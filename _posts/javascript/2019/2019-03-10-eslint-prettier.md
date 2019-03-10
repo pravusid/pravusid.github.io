@@ -74,7 +74,7 @@ prettier의 포맷을 적용하기 위한 설정파일이다.
 
 아래의 두 방법 중 하나를 선택하면 된다.
 
-JavaScript|TypeScript에서 인기가 높은 텍스트 에디터인 **VSCode**를 기준으로 설명한다.
+JavaScript & TypeScript에서 인기가 높은 텍스트 에디터인 **VSCode**를 기준으로 설명한다.
 
 VSCode에 적용하기 위해서 우선 확장 기능을 설치해야 한다
 

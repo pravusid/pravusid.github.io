@@ -123,7 +123,7 @@ DevDependencies 추가: `npm i -D prettier eslint-plugin-prettier eslint-config-
 
 VSCode에서 사용할 때 별도의 Prettier 관련 DevDependencies를 설치하지 않아도 된다(Prettier 확장에 포함되어 있음)
 
-`prettier-eslint`를 활성화 하기 위해서 VSCode의 설정에 다음을 추가한다.
+`prettier-eslint`를 활성화 하기 위해서 VSCode 설정에 다음을 추가한다
 
 ```json
 {
@@ -137,12 +137,29 @@ VSCode에서 사용할 때 별도의 Prettier 관련 DevDependencies를 설치�
 
 ## TSLint + Prettier 적용
 
+### 1. TSLint + tslint-plugin-prettier + tslint-config-prettier
+
 ESLint + Prettier와 거의 동일하지만 `tslint-plugin-prettier`, `tslint-config-prettier` 설정이 약간 다르다.
 
 해당 프로젝트의 github에 있는 README에서 설정방법을 확인할 수 있다
 
 - plugin: <https://github.com/prettier/tslint-plugin-prettier>
 - config: <https://github.com/prettier/tslint-config-prettier>
+
+### 2. TSLint + prettier-tslint
+
+`prettier-tslint`를 사용하려는 경우 VSCode 설정에 다음을 추가한다
+
+```json
+{
+  "typescript.format.enable": false,
+  "prettier.tslintIntegration": true
+}
+```
+
+VSCode와 별도로 사용하려면 `prettier`, `prettier-tslint`를 DevDependencies로 설치하면 된다.
+
+`prettier-tslint`에는 cli가 포함되어 있다: <https://github.com/azz/prettier-tslint>
 
 ## 맺음
 

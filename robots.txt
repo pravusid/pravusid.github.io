@@ -3,4 +3,4 @@ Allow: /
 Disallow: /about.html
 Disallow: /wiki/
 
-Sitemap: http://pravusid.github.io/sitemap.xml
+Sitemap: https://pravusid.kr/sitemap.xml

@@ -56,6 +56,8 @@ prettier의 포맷을 적용하기 위한 설정파일이다.
 
 설정은 다음 페이지에서 확인할 수 있다: <https://prettier.io/docs/en/configuration.html>
 
+`.prettierrc` 설정 예시
+
 ```json
 {
   "printWidth": 100,
@@ -81,11 +83,14 @@ VSCode에 적용하기 위해서 우선 확장 기능을 설치해야 한다
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-**VSCode의 ESLint 확장**은 `eslint` 패키지가 포함되어 있지 않으므로 `npm install`을 통해서 node_modules에 추가해야 한다.
+ESLint 확장기능은 eslint dependency 미포함, Prettier 확장기능은 prettier 및 pretter-es/tslint dependencies 포함이지만,
+설정파일(config) 및 플러그인(plugin)과 함께 사용하기 위해서 dev dependencies로 local node_modules로 관리하는 것을 추천한다.
 
-특히, 다음으로 설치할 Prettier 확장에서 ESLint 관련 (peer) dependencies와 연결시 global 모듈(`npm install -g`)은 인식하지 않으므로 local로 설치하는 것이 좋다.
+아래의 ESLint + Prettier는 eslint 설정이 완료된 상황임을 가정한다.
 
-**VSCode의 `Prettier - Code formatter` 확장**에는 node.js의 `prettier`, `prettier-eslint`, `prettier-tslint` 패키지가 포함되어 있으므로, 해당 패키지를 npm으로 local node_modules에 추가할 필요가 없다.
+만약 eslint가 준비되지 않았다면 다음 페이지에서 eslint 초기설정을 확인할 수 있다.
+
+<https://eslint.org/docs/user-guide/getting-started>
 
 ### 1. ESLint + eslint-plugin-prettier + eslint-config-prettier
 
@@ -121,8 +126,6 @@ DevDependencies 추가: `npm i -D prettier eslint-plugin-prettier eslint-config-
 
 ### 2. ESLint + prettier-eslint
 
-VSCode에서 사용할 때 별도의 Prettier 관련 DevDependencies를 설치하지 않아도 된다(Prettier 확장에 포함되어 있음)
-
 `prettier-eslint`를 활성화 하기 위해서 VSCode 설정에 다음을 추가한다
 
 ```json
@@ -132,7 +135,9 @@ VSCode에서 사용할 때 별도의 Prettier 관련 DevDependencies를 설치�
 }
 ```
 
-만약 VSCode 확장기능을 쓰지 않고 `prettier-eslint`를 적용하려면 `prettier`, `prettier-eslint`를 DevDependencies로 설치하고,
+VSCode에서 사용할 때 별도의 Prettier 관련 dev dependencies를 설치하지 않아도 된다 (Prettier 확장에 포함되어 있음)
+
+만약 VSCode 확장기능을 쓰지 않고 `prettier-eslint`를 적용하려면 `prettier`, `prettier-eslint`를 dev dependencies로 설치하고,
 [prettier-eslint-cli](https://github.com/prettier/prettier-eslint-cli)를 사용한다.
 
 ## TSLint + Prettier 적용

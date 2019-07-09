@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /about.html
 Disallow: /wiki/
 
 Sitemap: https://pravusid.kr/sitemap.xml

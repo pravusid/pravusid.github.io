@@ -37,24 +37,25 @@ GUI 환경에서 사용하는 터미널 에뮬레이터는 기본적으로 non-l
 nodejs global module 등의 설치 경로에 사용되는 것이 `prefix`이다.
 여러 node 버전 매니저에서 `PREFIX` 환경변수로 경로를 조정한다.
 
-> node prefix 확인: `npm config get prefix`
+> npm prefix 확인: `npm config get prefix`
 
 ## n
 
 <https://github.com/tj/n>
 
-node계의 아이돌이**었던** tj가 개발한 버전 관리자이다.
+nodejs의 아이돌이**었던** tj가 개발한 버전 관리자이다.
 
 - `$PREFIX` 환경변수 경로에 `n`이 설치된다
 - `$PREFIX`를 설정하지 않았다면 기본 값은 `/usr/local`이다
-- `PREFIX`, `N_PREFIX`를 `$HOME/n`으로 설정한다면 다른 버전 관리자처럼 특정 사용자 범위에서만 사용할 수 있다
+- `PREFIX`, `N_PREFIX`를 `$HOME/n`으로 설정한다면 다른 버전 관리자 처럼 특정 사용자 범위에서만 사용할 수 있다(`PATH`와 함께)
 
 기본적으로 `/usr/local/n/versions/` 경로에 nodejs 런타임 원본이 위치하고
-`/usr/local/bin`, `/usr/local/lib` 등의 경로에 있는 nodejs 파일을 대체 한다. (삭제 후 복사 === 덮어쓰기)
+`/usr/local/bin`, `/usr/local/lib` 등의 경로에 있는 nodejs 관련 파일을 대체 한다.(삭제 후 복사 === 덮어쓰기)
 
 이는 `PREFIX`가 변경되어도 동일한 방식으로 작동한다. (덮어쓰기)
 
 실제로는 동시에 하나의 버전만 사용가능하므로 기본 `PREFIX`(`/usr/local`) 경로에서 시스템 nodejs 런타임으로 활용할 때 사용하는 것이 가장 적합해보인다.
+
 시스템 nodejs 런타임으로 스크립트 실행 Cron Job을 실행하려면 `/usr/bin`, `/usr/local/bin` 경로에 위치해야 하기도 하고, 버전 변경이 자주 발생하지 않기 때문이다.
 
 반면, 시스템 경로에 일반적인 방식으로 nodejs를 설치하면 버전관리 자체는 번거롭기 때문에 `n`의 가치가 없는 것은 아니다.
@@ -81,13 +82,14 @@ Github Star상으로 최고 인기 버전 관리자이다.
 
 다만, symbolic link를 지원하지 않아서 시스템 런타임으로 사용하거나 VSCode 확장기능에서 node를 호출하는 경우 node 경로를 찾지 못하는 문제가 발생한다.
 
-VSCode debugger에서는 nvs와 함께 지원하지만 `launch.json` 파일의 `runtimeVersion` 옵션에 버전을 명시적으로 입력해야 되어서 불편하다.
+VSCode debugger에서 nvs와 함께 지원하지만 `launch.json` 파일의 `runtimeVersion` 옵션에 버전을 명시적으로 입력해야 되어서 불편하다.
 
 > symbolic link 관련 issue: <https://github.com/nvm-sh/nvm/issues/851>
 
-Github Issue도 여러 번 등록되었는데, Maintainer들은 Symbolic 링크를 통해 기본 node 버전을 `PATH`에 고정적으로 등록하는 것이 nvm의 역할이 아닌 것으로 보는 듯 하다.
+Github Issue도 여러 번 등록되었다.
+Maintainer들은 Symbolic 링크를 사용해서, 정해진 node 버전을 `PATH`에 고정하는 것이 nvm의 역할이 아닌 것이라 말한다.
 
-대충 issue를 살펴보니, symbolic 링크를 위해 alias를 사용하게 되는데, default alias는 사용하지 않는 사람도 있을 수 있고, current alias는 동시에 여러 세션이 열려있고 여러 버전이 실행되는 상황에서 명확한 상태를 갖지 않는 것으로 해석된다.
+대충 issue를 살펴보니, symbolic 링크를 위해 alias를 사용하게 되는데, default alias는 사용하지 않는 사람도 있을 수 있고, current alias는 동시에 여러 세션이 열려있고 여러 버전이 실행되는 상황에서 명확한 상태를 갖지 않는 것이 문제라고 생각하는 듯 하다.
 
 이와 관련하여 직접적으로 에디터/IDE 및 시스템 환경에서 `nvm`은 목적 적합하지 않고 `n`을 쓰라는 의견을 주기도 하였다.
 

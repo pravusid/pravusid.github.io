@@ -37,19 +37,13 @@ IDE나 텍스트 에디터를 사용하면 기본 구문 하이라이팅도 충�
   Gooogle Android 5.0 이후의 디자인 테마 Material에서 영향을 받아 만들어진 Syntax Theme입니다.
   Sublime Text Theme로 인기를 얻고 나서, 대부분의 Text Editor나 IDE에서도 사용할 수 있는 것으로 보입니다.
 
-  ![Material Theme](https://camo.githubusercontent.com/972bd5d93779fdaf95e02cf0326b429be93adcba/687474703a2f2f692e696d6775722e636f6d2f395079784a4d4e2e676966)
-
 - [Dracula](https://draculatheme.com/) :
   Darcula와 이름이 거의 유사하지만 서로 다릅니다. 드라큘라는 여러 테마들 중 가장 많은 IDE, 에디터, 터미널을 일관성있게 지원하고 있습니다.
   심지어 메신저 테마도 지원하고 있습니다.
 
-  ![Dracula Theme](https://draculatheme.com/assets/img/screenshots/vscode.png)
-
 - [Nord](https://git.io/nord) :
   조건에 맞춰 찾은 세 테마중 가장 늦은시기에 제작되었습니다.
   대부분의 Syntax Theme가 다양한 색을 사용해서 알록달록한 느낌을 주는데 비해 단조롭고 낮은채도의 색상을 사용한 것이 특징입니다.
-
-  ![Nord Theme](https://raw.githubusercontent.com/arcticicestudio/nord-visual-studio-code/develop/assets/scrot-preview.png)
 
 ## Nord Theme
 

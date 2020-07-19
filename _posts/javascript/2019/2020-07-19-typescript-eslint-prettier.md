@@ -110,8 +110,6 @@ npm i --save-dev prettier eslint-plugin-prettier eslint-config-prettier
 `.eslintrc.json` 설정에 다음을 추가한다
 
 ```json
-.eslintrc.json
-
 {
   "extends": ["plugin:prettier/recommended", "prettier/@typescript-eslint"]
 }

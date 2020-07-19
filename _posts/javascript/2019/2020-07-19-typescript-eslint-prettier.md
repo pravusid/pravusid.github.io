@@ -7,6 +7,7 @@ tags:
   - eslint
   - typescript
   - prettier
+  - typescript-eslint
   - vscode
 last_modified_at: 2020-07-19T21:10+09:00
 comments: true
@@ -55,7 +56,7 @@ npm i --save-dev typescript eslint @typescript-eslint/parser @typescript-eslint/
 }
 ```
 
-`"extends": ["plugin:@typescript-eslint/recommended"]` 설정 -> `@typescript-eslint/eslint-plugin` 적용과 동시에 `recommened` 규칙을 확장한다
+`"extends": ["plugin:@typescript-eslint/recommended"]` 설정을 통해 `@typescript-eslint/eslint-plugin` 적용과 동시에 `recommened` 규칙을 확장한다
 
 `recommened` 규칙 세부목록은 다음 페이지에서 확인할 수 있다.
 
@@ -97,7 +98,7 @@ JavaScript와 마찬가지로 typescript-eslint와 prettier를 함께 사용할 
 규칙중 `requires type information` 유형에 해당하는 규칙은 컴파일러 분석에서 조금 아쉬웠던 부분을 긁어주는 규칙이다.
 (처리 속도 문제로 `recommened` 규칙에서는 제외되어 있다.)
 
-prettier와 eslint의 관계에 대해서는 다음 포스트를 참조: <https://pravusid.kr/javascript/2019/03/10/eslint-prettier.html>
+> prettier와 eslint의 관계에 대해서는 다음 포스트를 참조: <https://pravusid.kr/javascript/2019/03/10/eslint-prettier.html>
 
 ### typescript-eslint + prettier 적용
 
@@ -135,7 +136,7 @@ npm i --save-dev prettier eslint-plugin-prettier eslint-config-prettier
 }
 ```
 
-prettier 규칙은 다음페이지를 참고하여 생성할 수 있다: <https://prettier.io/docs/en/configuration.html>
+> prettier 규칙은 다음페이지를 참고하여 생성할 수 있다: <https://prettier.io/docs/en/configuration.html>
 
 VSCode를 사용하고 있다면
 

@@ -14,7 +14,8 @@ comments: true
 
 코드 분석기인 ESLint와 formatter인 Prettier를 함께 사용하기 위해 필요한 사항을 알아보자
 
-> TypeScript 도구인 TSLint에도 동일하게 적용할 수 있다
+> ~~TypeScript 도구인 TSLint에도 동일하게 적용할 수 있다~~
+> TypeScript 적용을 위해서는 typescript-eslint 사용이 권장된다: <https://pravusid.kr/typescript/2020/07/19/typescript-eslint-prettier.html>
 
 ESLint는 현재 가장 많은 사용자가 있는 JavaScript linter이다.
 
@@ -144,6 +145,8 @@ VSCode에서 사용할 때 별도의 Prettier 관련 dev dependencies를 설치�
 [prettier-eslint-cli](https://github.com/prettier/prettier-eslint-cli)를 사용한다.
 
 ## TSLint + Prettier 적용
+
+> TypeScript 적용을 위해서는 typescript-eslint 사용이 권장된다: <https://pravusid.kr/typescript/2020/07/19/typescript-eslint-prettier.html>
 
 ### 1. TSLint + tslint-plugin-prettier + tslint-config-prettier
 

@@ -1,12 +1,13 @@
 ---
 layout: post
-title: ESLint(TSLint)와 Prettier 함께 사용하기
+title: ESLint(TSLint)와 Prettier 함께 사용하기(w/ VSCode)
 categories:
   - JavaScript
 tags:
   - eslint
   - tslint
   - prettier
+  - vscode
 last_modified_at: 2019-03-10T17:30+09:00
 comments: true
 ---
@@ -109,6 +110,8 @@ plugin 사용만으로는 eslint formatting rules와 prettier rules가 충돌하
 DevDependencies 추가: `npm i -D prettier eslint-plugin-prettier eslint-config-prettier`
 
 `.eslintrc.json` 설정에 추가
+
+> <https://github.com/prettier/eslint-plugin-prettier#recommended-configuration>
 
 ```json
 {

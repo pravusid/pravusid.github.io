@@ -84,7 +84,6 @@ VSCode를 사용하고 있다면
     { "language": "typescriptreact", "autoFix": true }
   ]
 }
-
 ```
 
 ## typescript-eslint + prettier
@@ -138,12 +137,9 @@ npm i --save-dev prettier eslint-plugin-prettier eslint-config-prettier
 
 > prettier 규칙은 다음페이지를 참고하여 생성할 수 있다: <https://prettier.io/docs/en/configuration.html>
 
-VSCode를 사용하고 있다면
+VSCode를 사용하고 있다면(ESLint 확장은 `typescript-eslint` 적용 단계에서 설치했다고 가정)
 
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) 확장
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) 확장
-
-두 확장을 설치하고 다음 설정을 적용한다
+[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) 확장을 설치하고 다음 설정을 적용한다
 
 ```json
 {

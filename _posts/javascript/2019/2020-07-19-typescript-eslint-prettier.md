@@ -62,6 +62,11 @@ npm i --save-dev typescript eslint @typescript-eslint/parser @typescript-eslint/
 
 <https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#supported-rules>
 
+typescript-eslint는 구문분석을 하면서 AST를 생성하므로 상당히 강력한 규칙들을 적용 가능하다.
+
+규칙중 `requires type information` 유형에 해당하는 규칙은 컴파일러 분석에서 조금 아쉬웠던 부분을 긁어주는 규칙이다.
+(처리 속도 문제로 `recommened` 규칙에서는 제외되어 있다.)
+
 ### typescript-eslint 실행
 
 ```sh
@@ -89,13 +94,6 @@ VSCode를 사용하고 있다면
 ## typescript-eslint + prettier
 
 JavaScript와 마찬가지로 typescript-eslint와 prettier를 함께 사용할 수 있다.
-
-특히 구문분석을 하면서 AST를 생성하므로 상당히 강력한 규칙들을 적용 가능하다.
-
-<https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#supported-rules> 페이지에 typescript-eslint 규칙들이 나와있다.
-
-규칙중 `requires type information` 유형에 해당하는 규칙은 컴파일러 분석에서 조금 아쉬웠던 부분을 긁어주는 규칙이다.
-(처리 속도 문제로 `recommened` 규칙에서는 제외되어 있다.)
 
 > prettier와 eslint의 관계에 대해서는 다음 포스트를 참조: <https://pravusid.kr/javascript/2019/03/10/eslint-prettier.html>
 

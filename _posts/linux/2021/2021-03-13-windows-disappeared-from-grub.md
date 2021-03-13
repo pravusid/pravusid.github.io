@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 리눅스 윈도우즈 멀티부팅 환경에서 grub에서 윈도우즈가 사라진 경우
+title: 리눅스 윈도우즈 멀티부팅시 윈도우즈가 grub에서 사라진 경우
 categories:
   - Linux
 tags:

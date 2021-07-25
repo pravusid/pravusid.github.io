@@ -8,7 +8,7 @@ title:            ID PRAVUS
 tagline:          'IGNIS DEI PRAVUS EST'
 description:      '甲의 계획, 乙의 인생'
 url:              https://pravusid.kr
-baseurl:          # the optional subpath of your site, e.g. "/blog"
+baseurl:          '' # the optional subpath of your site, e.g. "/blog"
 
 author:
   name:           'pravusid'

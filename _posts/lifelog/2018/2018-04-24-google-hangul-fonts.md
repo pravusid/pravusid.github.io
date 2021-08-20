@@ -5,25 +5,18 @@ categories:
   - Lifelog
 tags:
   - 구글 폰트
-  - Noto sans KR
+  - Noto Sans KR
   - 한글 웹폰트
 last_modified_at: 2018-04-24T22:10+09:00
 comments: true
 ---
 
-구글에서 Early Access로 공개했던 한글 웹폰트를 본격지원하기 시작했다.
-
-기존에 <http://fonts.googleapis.com/earlyaccess/> Early Acess로 공개되었으나, 최근 정식제공 소식이 들려왔다.
-
 <https://googlefonts.github.io/korean/> 에서 지원하는 폰트와 제작과정에 대한 설명 등을 볼 수 있다.
 
 ## 적용하기
 
-구글 설명에 따르면 CJK(한중일) 폰트는 용량이 크기 때문에(한자 + 완성형 한글) 분할 다운로드를 적용하였다고 한다.
-
-분할 다운로드에 머신러닝을 적용하여, 해당 css를 요청하는 곳이 늘어날 수록 최적화 된다고 한다.
-
-폰트 두께도 선택해서 가져올 수 있다. 요청한 두께가 없으면 제외하고 가져오는 듯 하다.
+구글 설명에 따르면 CJK(한중일) 폰트는 용량이 크기 때문에(한자 + 완성형 한글) 분할 다운로드(dynamic subset)를 적용하였다고 한다.
+폰트 굵기도 선택해서 가져올 수 있다.
 
 우선 구글 api로 부터 폰트를 가져와야 한다. 즐겨쓰는 폰트 세 가지를 요청하는 주소는 다음과 같다.
 

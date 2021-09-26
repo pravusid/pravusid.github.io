@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows & Manjaro Linux 멀티부팅 설정
+title: Windows & Linux 멀티부팅 설정
 categories:
   - Linux
 tags:
@@ -17,11 +17,13 @@ comments: true
 
 ## Bootable USB
 
-<https://wiki.manjaro.org/index.php/Burn_an_ISO_File>
+> 직접 부트가능 USB를 제작할 수도 있지만 [Ventoy](https://www.ventoy.net/en/index.html)를 사용하는 것이 더 좋다
+
+<https://wiki.archlinux.org/title/USB_flash_installation_medium>
 
 ```sh
 sudo fdisk -l
-sudo dd bs=4M if=/path/to/manjaro.iso of=/dev/sd[drive letter] status=progress oflag=sync
+sudo dd bs=4M if=path/to/linux-version-x86_64.iso of=/dev/sd(drive letter) conv=fsync oflag=direct status=progress
 ```
 
 ## 바이오스 설정
@@ -59,6 +61,12 @@ grub에서는 윈도우즈 부트영역을 인식하여 멀티부팅 처리를 �
 
 - 2번 디스크에 윈도우즈 설치 (부트 파티션, 운영체제 파티션 및 복구 파티션이 생성됨)
 - 1번 디스크에 리눅스 설치 (부트 파티션의 grub에서 윈도우즈 부트 매니저를 읽어와서 처리함)
+
+## grub 설정
+
+두 운영체제를 모두 설치했으나 Grub2 화면에서 윈도우즈가 보이지 않을 수 있다
+
+이 경우 Grub 설정을 변경해야 한다: <https://pravusid.kr/linux/2020/11/08/install-linux-windows.html>
 
 ## 스왑 용량
 

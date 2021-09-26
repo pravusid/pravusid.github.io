@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 리눅스 윈도우즈 멀티부팅시 윈도우즈가 grub에서 사라진 경우
+title: 리눅스 윈도우즈 멀티부팅 환경에서 윈도우즈가 grub에서 사라진 경우
 categories:
   - Linux
 tags:
@@ -14,12 +14,11 @@ comments: true
 ---
 
 윈도우즈와 리눅스 멀티부팅은 이전 포스트에서 소개한 적 있다.
-<https://pravusid.kr/linux/2020/11/08/install-majaro-linux.html>
+<https://pravusid.kr/linux/2020/11/08/install-linux-windows.html>
 
 어느날 리눅스를 업데이트 하고나니 [grub](https://en.wikipedia.org/wiki/GNU_GRUB)에서 윈도우즈가 사라졌다.
 
-> [만자로 리눅스 grub 설정 기본값이 변경된 문제로 보인다](https://forum.manjaro.org/t/grub-disable-os-prober-flag-appears-to-be-ignored-in-etc-default-grub/56382/5).
-> 다른 배포판은 상관 없겠지만 트러블슈팅 기록 차원으로 남겨본다.
+> 배포판에 따라 기본값으로 윈도우즈 검색이 안되거나, 업데이트로 인하여 설정 값이 변경될 수 있다
 
 ## `update-grub`
 
@@ -80,6 +79,8 @@ GRUB_DISABLE_OS_PROBER="true"
 
 ```sh
 sudo update-grub
+# if not found
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 ### 방법2: grub-customizer 사용
